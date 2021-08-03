@@ -8,15 +8,15 @@
   margin: 1em;
 }
 
-.cc-header {
-  font-size: 1.5em;
-  letter-spacing: 0.4em;
-}
-
 .cc-article {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
+}
+
+.cc-header {
+  font-size: 1.2rem;
+  letter-spacing: 0.4em;
 }
 
 .cc-description {
@@ -24,6 +24,7 @@
   padding: 1em;
 }
 .cc-img {
-  height: inherit;
+  /* height: 100%;
+  width: 100%; */
   border-radius: 2em 0 0 2em;
 }

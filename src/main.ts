@@ -14,10 +14,7 @@ const mainElement = createElement('main', {
       src: 'https://help.redbubble.com/hc/article_attachments/360002309526/Rick_and_Morty_-_logo__English_.png',
       className: 'headerLogo',
     }),
-    createElement('img', {
-      src: 'https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/06/Rick-and-Morty-Movie-Will-Happen-Header.jpg',
-      className: 'headerImg',
-    }),
+
     createElement('input', {
       className: 'searchBar',
       placeholder: 'Dive into the world of Rick and Morty...',
