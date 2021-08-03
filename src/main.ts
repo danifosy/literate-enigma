@@ -7,15 +7,21 @@ const app = document.querySelector<HTMLDivElement>('#app');
 const mainElement = createElement('main', {
   className: 'container',
   childElements: [
-    createElement('h1', { innerText: 'Rick and Morty' }),
-    createElement('h2', { innerText: 'Lorem ipsum dolor sit amet' }),
+    createElement('img', {
+      src: 'https://help.redbubble.com/hc/article_attachments/360002309526/Rick_and_Morty_-_logo__English_.png',
+      className: 'headerLogo',
+    }),
+    createElement('img', {
+      src: 'https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/06/Rick-and-Morty-Movie-Will-Happen-Header.jpg',
+      className: 'headerImg',
+    }),
     createElement('input', {
+      className: 'searchBar',
       placeholder: 'Dive into the world of Rick and Morty...',
     }),
+    createElement('h2', { innerText: 'Your character of the day is:' }),
   ],
 });
-
-mainElement.append(characterCards);
 
 /* const mainElement = document.createElement('main');
 mainElement.className = 'container';
@@ -46,6 +52,7 @@ characterCards.append(characterCardArticle);*/
 
 if (app !== null) {
   app.append(mainElement);
+  mainElement.append(characterCards());
 }
 
 //mainElement.append(title, subTitle, characterSearch, characterCards);
