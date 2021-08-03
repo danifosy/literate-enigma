@@ -1,11 +1,17 @@
 import './style.css';
-import './utils/createElement';
+import { createElement } from './utils/createElement';
 
 const app = document.querySelector<HTMLDivElement>('#app');
 
 const mainElement = createElement('main', {
-  childElements: [createElement('h1', { innertext: 'Rick and Morty' })],
-  createElement,
+  childElements: [
+    createElement('h1', { innerText: 'Rick and Morty' }),
+    createElement('h2', { innerText: 'Lorem ipsum dolor sit amet' }),
+    createElement('input', {
+      placeholder: 'Dive into the world of Rick and Morty...',
+    }),
+  ],
+  className: 'container',
 });
 
 /* const mainElement = document.createElement('main');
