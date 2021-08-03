@@ -8,6 +8,11 @@
   margin: 1em;
 }
 
+.cc-img {
+  height: inherit;
+  border-radius: 2em 0 0 2em;
+}
+
 .cc-article {
   display: grid;
   grid-template-rows: 1fr;
@@ -22,9 +27,4 @@
 .cc-description {
   text-align: end;
   padding: 1em;
-}
-.cc-img {
-  /* height: 100%;
-  width: 100%; */
-  border-radius: 2em 0 0 2em;
 }

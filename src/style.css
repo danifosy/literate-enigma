@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -5,11 +11,13 @@
   text-align: center;
   color: #cbc5de;
   margin-top: 60px;
+  height: 100%;
 }
 
 body {
   background-color: #3d3946;
   margin: 0;
+  height: 100vh;
 }
 
 .headerLogo {
