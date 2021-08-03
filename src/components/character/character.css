@@ -1,6 +1,7 @@
 .cc-grid {
   display: grid;
   grid-auto-flow: column;
+  grid-gap: 1em;
   background-color: #3b6a79;
   color: #fff;
   border-radius: 2.5em;
@@ -8,7 +9,7 @@
 }
 
 .cc-header {
-  font-size: 1.7em;
+  font-size: 1.5em;
   letter-spacing: 0.4em;
 }
 
@@ -23,6 +24,6 @@
   padding: 1em;
 }
 .cc-img {
-  width: 100%;
+  height: inherit;
   border-radius: 2em 0 0 2em;
 }
