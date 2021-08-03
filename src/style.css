@@ -3,12 +3,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: rgb(65, 34, 160);
+  color: #cbc5de;
   margin-top: 60px;
 }
 
 body {
-  background-color: #e999ff;
+  background-color: #3d3946;
   margin: 0;
 }
 
