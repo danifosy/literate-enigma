@@ -6,3 +6,15 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+
+body {
+  background-color: #c3e0e4;
+}
+
+.container {
+  display: grid;
+}
+
+.character-cards {
+  background-color: #fff;
+}
