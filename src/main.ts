@@ -1,5 +1,6 @@
 import './style.css';
 import { createElement } from './utils/createElement';
+import { characterCards } from './components/character/character';
 
 const app = document.querySelector<HTMLDivElement>('#app');
 
@@ -13,6 +14,8 @@ const mainElement = createElement('main', {
     }),
   ],
 });
+
+mainElement.append(characterCards);
 
 /* const mainElement = document.createElement('main');
 mainElement.className = 'container';
