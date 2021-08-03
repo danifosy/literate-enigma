@@ -1,9 +1,10 @@
 .cc-grid {
   display: grid;
-  background-color: #0d3946;
+  grid-auto-flow: column;
+  background-color: #3b6a79;
   color: #fff;
   border-radius: 2.5em;
-  border: 0.5em solid;
+  margin: 1em;
 }
 
 .cc-header {
@@ -11,7 +12,17 @@
   letter-spacing: 0.4em;
 }
 
+.cc-article {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cc-description {
+  text-align: end;
+  padding: 1em;
+}
 .cc-img {
   width: 100%;
-  border-radius: 2em;
+  border-radius: 2em 0 0 2em;
 }

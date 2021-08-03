@@ -29,6 +29,10 @@ body {
   filter: blur(2px);
 }
 
+.searchBar {
+  margin-top: 1em;
+}
+
 .character-cards {
   background-color: #fff;
 }
