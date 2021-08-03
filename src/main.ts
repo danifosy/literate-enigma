@@ -4,6 +4,7 @@ import { createElement } from './utils/createElement';
 const app = document.querySelector<HTMLDivElement>('#app');
 
 const mainElement = createElement('main', {
+  className: 'container',
   childElements: [
     createElement('h1', { innerText: 'Rick and Morty' }),
     createElement('h2', { innerText: 'Lorem ipsum dolor sit amet' }),
@@ -11,7 +12,6 @@ const mainElement = createElement('main', {
       placeholder: 'Dive into the world of Rick and Morty...',
     }),
   ],
-  className: 'container',
 });
 
 /* const mainElement = document.createElement('main');
@@ -45,4 +45,4 @@ if (app !== null) {
   app.append(mainElement);
 }
 
-mainElement.append(title, subTitle, characterSearch, characterCards);
+//mainElement.append(title, subTitle, characterSearch, characterCards);
