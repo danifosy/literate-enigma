@@ -9,7 +9,7 @@ export function createCharacterCards({
   origin,
 }: Character): HTMLElement {
   return createElement('div', {
-    className: styles.grid,
+    className: styles.card,
     childElements: [
       createElement('article', {
         className: styles.article,
