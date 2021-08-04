@@ -1,4 +1,4 @@
-import './character.css';
+import styles from './character.module.css';
 import { Character } from '../../types';
 import { createElement } from '../../utils/createElement';
 
@@ -9,25 +9,25 @@ export function createCharacterCards({
   origin,
 }: Character): HTMLElement {
   return createElement('div', {
-    className: 'cc-grid',
+    className: styles.grid,
     childElements: [
       createElement('article', {
-        className: 'cc-article',
+        className: styles.article,
         childElements: [
           createElement('img', {
             src: thumbnail,
-            className: 'cc-img',
+            className: styles.img,
           }),
           createElement('div', {
-            className: 'cc-description',
+            className: styles.description,
             childElements: [
               createElement('h3', {
                 innerText: name,
-                className: 'cc-header',
+                className: styles.header,
               }),
               createElement('p', {
                 innerText: status,
-                className: 'cc-status',
+                className: styles.status,
               }),
               createElement('p', { innerText: 'Citadel of Ricks' }),
               createElement('p', {
