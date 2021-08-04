@@ -1,11 +1,16 @@
 import './style.css';
+import { Character } from './types';
 import { createElement } from './utils/createElement';
-import {
-  characterCards,
-  characterCards1,
-} from './components/character/character';
+import { createCharacterCards } from './components/character/character';
 
 const app = document.querySelector<HTMLDivElement>('#app');
+
+const character: Character = {
+  thumbnail: 'https://rickandmortyapi.com/api/character/avatar/133.jpeg',
+  name: 'Garblovian',
+  status: 'Alive - Alien',
+  origin: 'unknown location',
+};
 
 const mainElement = createElement('main', {
   className: 'container',
@@ -25,7 +30,7 @@ const mainElement = createElement('main', {
 
 if (app !== null) {
   app.append(mainElement);
-  mainElement.append(characterCards(), characterCards1());
+  mainElement.append(createCharacterCards(character));
 }
 
 //mainElement.append(title, subTitle, characterSearch, characterCards);
