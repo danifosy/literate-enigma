@@ -30,7 +30,7 @@ export type AllCharactersFromAPI = {
   info: {
     count: number;
     pages: number;
-    next: string;
+    next: string | null;
     prev: null | string;
   };
   results: CharacterFromAPI[];
