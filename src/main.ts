@@ -4,18 +4,10 @@ import { createElement } from './utils/createElement';
 import { getCharacters } from './utils/api';
 import { createCharacterCards } from './components/character/character';
 
-getCharacters();
-
 const app = document.querySelector<HTMLDivElement>('#app');
 
-const characters: Character[] = [
-  {
-    thumbnail: 'https://rickandmortyapi.com/api/character/avatar/133.jpeg',
-    name: 'Garblovian',
-    status: 'Alive - Alien',
-    origin: 'unknown location',
-  },
-];
+const characters: Character[] = await getCharacters();
+
 const mainElement = createElement('main', {
   className: 'container',
   childElements: [
