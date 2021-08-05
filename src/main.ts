@@ -1,7 +1,10 @@
 import './style.css';
 import { Character } from './types';
 import { createElement } from './utils/createElement';
+import { getCharacters } from './utils/api';
 import { createCharacterCards } from './components/character/character';
+
+getCharacters();
 
 const app = document.querySelector<HTMLDivElement>('#app');
 
